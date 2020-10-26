@@ -2,7 +2,7 @@
 import './App.css';
 import Intro from './components/Intro';
 import About from './components/About';
-import { UiProvider } from './context/uiContext';
+import { UiProvider } from './context/UiContext';
 
 function App() {
   return (

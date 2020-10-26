@@ -1,0 +1,31 @@
+import yay from '../img/yay.png';
+import jestLogo from '../img/jestLogo.png';
+import javaLogo from '../img/javaLogo.svg';
+import nodeJSLogo from '../img/nodeJSLogo.png';
+import reactLogo from '../img/reactLogo.png';
+import seleniumWebDriverLogo from '../img/seleniumWebDriverLogo.png';
+import jsLogo from '../img/jsLogo.png';
+import sceneBuilderLogo from '../img/sceneBuilderLogo.png';
+import appEngineLogo from '../img/appEngineLogo.png';
+import gitLogo from '../img/gitLogo.png';
+import antlrLogo from '../img/antlrLogo.png';
+import mySQLLogo2 from '../img/mySQLLogo2.png';
+import junitLogo from '../img/junitLogo.png';
+
+class Icons {
+    static yay = { name: 'Yay', logo: yay, alt: 'Yay' };
+    static jest = { name: 'Jest', logo: jestLogo, alt: "Jest framework's" };
+    static java = { name: 'Java', logo: javaLogo, alt: "Java"}
+    static nodeJS = { name: 'NodeJS', logo: nodeJSLogo, alt: "NodeJS"}
+    static reactJS = { name: 'ReactJS', logo: reactLogo, alt: "ReactJS"}
+    static seleniumWebDriver = { name: 'Selenium WebDriver', logo: seleniumWebDriverLogo, alt: "Selenium WebDriver"}
+    static javascript = { name: 'JavaScript', logo: jsLogo, alt: "JavaScript"}
+    static sceneBuilder = { name: 'Scene Builder', logo: sceneBuilderLogo, alt: "Scene Builder"}
+    static appEngine = { name: 'App Engine', logo: appEngineLogo, alt: "App Engine"}
+    static git = { name: 'Git', logo: gitLogo, alt: "Git"}
+    static antlr = { name: 'Antlr', logo: antlrLogo, alt: "Antlr"}
+    static mySQL = { name: 'MySQL', logo: mySQLLogo2, alt: "MySQL"}
+    static junit = { name: 'JUnit', logo: junitLogo, alt: "JUnit"}
+}
+
+export default Icons;
