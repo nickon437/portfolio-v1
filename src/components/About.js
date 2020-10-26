@@ -20,7 +20,7 @@ const About = () => {
     ];
 
     const toolList = toolData.map((tool) => (
-        <li><img src={tool.logo} alt={tool.alt} /></li>
+        <li data-name={tool.name}><img src={tool.logo} alt={tool.alt} data-tooltip="abx"/></li>
     )); 
 
     return (
