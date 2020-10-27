@@ -22,7 +22,7 @@ const About = () => {
     )); 
 
     return (
-        <div id="about" className={`info-card`}>
+        <div id="about" className={`info-pane-content`}>
             <h1>About</h1>
             <div>A software engineer who loves to collab and build intuitive, maintainable and scalable applications. I have experienced in working in Agiled environments with an emphasis on utilizing best practices to create software that meets requirements and schedule.</div>
             <h2>Technologies I work with:</h2>
