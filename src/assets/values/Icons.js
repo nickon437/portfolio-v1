@@ -11,6 +11,9 @@ import gitLogo from '../img/gitLogo.png';
 import antlrLogo from '../img/antlrLogo.png';
 import mySQLLogo2 from '../img/mySQLLogo2.png';
 import junitLogo from '../img/junitLogo.png';
+import github from '../img/github.png';
+import email from '../img/email.png';
+import linkedin from '../img/linkedin.png';
 
 class Icons {
     static yay = { name: 'Yay', logo: yay, alt: 'Yay' };
@@ -26,6 +29,9 @@ class Icons {
     static antlr = { name: 'ANTLR', logo: antlrLogo, alt: "Antlr"}
     static mySQL = { name: 'MySQL', logo: mySQLLogo2, alt: "MySQL"}
     static junit = { name: 'JUnit', logo: junitLogo, alt: "JUnit"}
+    static github = { name: 'GitHub', logo: github, alt: "GitHub"}
+    static email = { name: 'Email', logo: email, alt: "Email"}
+    static linkedin = { name: 'Linkedin', logo: linkedin, alt: "Linkedin"}
 }
 
 export default Icons;
