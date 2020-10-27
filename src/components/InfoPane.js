@@ -1,6 +1,7 @@
 import React, { useContext, useRef } from 'react'
 import { UiContext } from '../context/UiContext'
 import About from './About';
+import Contact from './Contact';
 
 const InfoPane = () => {
     const [ui, setUi] = useContext(UiContext);
@@ -15,6 +16,8 @@ const InfoPane = () => {
 
     if (ui.ctxInfoPane === 'about') {
         content.current = <About />;
+    } else if (ui.ctxInfoPane === 'contact') {
+        content.current = <Contact />
     }
 
     return (

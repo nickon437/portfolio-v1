@@ -29,6 +29,25 @@
   
 }
 
+img[name="Yay"] {
+  animation: rotate-head ease-in-out 3s;
+  transform: rotate(30%);
+}
+
+@keyframes rotate-head {
+  0% {
+    transform: rotate(40deg);
+  }
+
+  33% {
+    transform: rotate(-10deg);
+  }
+
+  66% {
+    transform: rotate(20deg);
+  }
+}
+
 /** INFO CARD **/
 
 .info-pane {
@@ -127,3 +146,4 @@
   visibility: hidden; */
   opacity: 0;
 }
+
