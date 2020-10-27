@@ -8,7 +8,7 @@ export default function Intro() {
     const handleClickAbout = () => {
         setUi((prevUi) => ({
             ...prevUi,
-            ctxIsAboutActive: true,
+            ctxInfoPane: 'about',
         }));
     }
     

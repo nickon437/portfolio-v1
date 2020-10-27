@@ -1,7 +1,7 @@
 
 import './App.css';
+import InfoPane from './components/InfoPane';
 import Intro from './components/Intro';
-import About from './components/About';
 import { UiProvider } from './context/UiContext';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <UiProvider>
       <div className="App">
         <Intro />
-        <About />
+        <InfoPane />
       </div>
     </UiProvider>
   );

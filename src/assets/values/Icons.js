@@ -23,7 +23,7 @@ class Icons {
     static sceneBuilder = { name: 'Scene Builder', logo: sceneBuilderLogo, alt: "Scene Builder"}
     static appEngine = { name: 'App Engine', logo: appEngineLogo, alt: "App Engine"}
     static git = { name: 'Git', logo: gitLogo, alt: "Git"}
-    static antlr = { name: 'Antlr', logo: antlrLogo, alt: "Antlr"}
+    static antlr = { name: 'ANTLR', logo: antlrLogo, alt: "Antlr"}
     static mySQL = { name: 'MySQL', logo: mySQLLogo2, alt: "MySQL"}
     static junit = { name: 'JUnit', logo: junitLogo, alt: "JUnit"}
 }

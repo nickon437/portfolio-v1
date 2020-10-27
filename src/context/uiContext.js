@@ -4,8 +4,7 @@ export const UiContext = React.createContext();
 
 export const UiProvider = (props) => {
   const [ui, setUi] = useState({
-    ctxIsAboutActive: false,
-    ctxIsContactActive: false,
+    ctxInfoPane: '',
   });
 
   return (
