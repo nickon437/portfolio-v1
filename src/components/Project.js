@@ -4,7 +4,7 @@ import screenshot from '../assets/img/screenshot.png';
 
 const Project = () => {
     return (
-        <div>
+        <div className="project">
             <Thumbnail imgSrc={screenshot} title="title" snippet="snippet" />
         </div>
     )

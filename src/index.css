@@ -83,6 +83,11 @@ svg {
   height: 3rem;
 }
 
+.no-scroll {
+  /* flex-wrap: nowrap; */
+  /* overflow: hidden; */
+}
+
 .hidden {
   display: none !important;
 }

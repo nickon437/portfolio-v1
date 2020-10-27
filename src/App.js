@@ -1,18 +1,13 @@
-
 import './App.css';
-import InfoPane from './components/InfoPane';
-import Intro from './components/Intro';
-import Project from './components/Project';
+import Main from './components/Main';
 import { UiProvider } from './context/UiContext';
 
 function App() {
+  // const [ui, setUi] = useContext(UiContext);
+  
   return (
     <UiProvider>
-      <div className="App">
-        <Intro />
-        <InfoPane />
-        <Project />
-      </div>
+      <Main />
     </UiProvider>
   );
 }
