@@ -31,7 +31,7 @@
 
 /** INFO CARD **/
 
-.info-card {
+.info-pane {
   background-color: var(--bg);
   position: absolute;
   top: 0;
@@ -43,31 +43,40 @@
   align-items: flex-start;
   font-size: 1.5rem;
   text-align: left;
-  
-  
+
+  transition: all 1s ease-in-out;
+}
+
+.info-pane-content {
+  /* background-color: var(--bg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.5rem;
+  text-align: left; */
   padding: 3rem;
 }
 
-.info-card img {
+.info-pane-content img {
   height: 2.5rem;
-  /* width: 2rem; */
   transition: transform 0.2s ease-in-out;
-  /* cursor: pointer; */
-  position: relative;
 }
 
-.info-card img:hover {
-  height: 2.5rem;
+.info-pane-content img:hover {
   transform: scale(1.5);
 }
 
-.info-card li {
+.info-pane-content li {
   --scale: 0;
   position: relative;
 }
 
-/* .info-card li::before,  */
-.info-card li::after {
+.info-pane-content li::after {
   position: absolute;
   bottom: -1rem;
   left: 50%;
@@ -84,14 +93,37 @@
   z-index: 1;
 }
 
-.info-card li:hover {
+.info-pane-content li:hover {
   --scale: 1;
 }
 
 .info-nav-bar {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 5px;
   z-index: 1;
-  /* bottom: 0; */
+}
+
+.info-pane-hidden {
+  animation: slide-from-bottom 2s ease-in both;
+  /* position: hidden; */
+}
+
+@keyframes slide-from-bottom {
+  /* 0% {
+    position: absolute;
+    transform: translateY(0%);
+  } */
+
+  100% {
+    position: hidden;
+    /* transform: translateY(100%); */
+  }
+}
+
+.info-pane-hidden {
+  transform: translateY(-100%);
+  /* position: hidden;
+  visibility: hidden; */
+  opacity: 0;
 }
