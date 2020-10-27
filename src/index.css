@@ -28,30 +28,32 @@ code {
 
 #root {
   --bg: #1E272E;
+  --hover-color: coral;
   background-color: var(--bg);
   color: white;
 }
 
-button.link {
+button {
+  cursor: pointer;
   background-color: transparent;
   border: none;
   font: inherit;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: underline;
-  font-style: italic;
   color: inherit;
 }
 
+button.link {
+  padding: 0;
+  text-decoration: underline;
+  font-style: italic;
+}
+
 button.link:hover{
-  color: coral;
+  color: var(--hover-color);
 }
 
 ol, ul {
   list-style: none;
   padding: 0;
-  /* margin: 0; */
-
   font: inherit;
   display: flex;
   gap: 1rem;
@@ -59,95 +61,11 @@ ol, ul {
 }
 
 li {
+
 }
 
-#intro {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  /* align-items: center; */
-  justify-content: center;
-  /* justify-items: center; */
-  text-align: left;
-  height: 100%;
-  padding: 10%;
-  font-size: 2rem;
-}
-
-#intro > .heading {
-  font-size: 3rem;
-  font-weight: bold;
-  padding-bottom: 1rem;
-}
-
-#intro > .heading > img {
-  height: 2.5rem;
-}
-
-#intro > .content {
-  padding-bottom: 0.5rem;
-}
-
-#about {
-  
-
-  
-}
-
-.info-card {
-  background-color: var(--bg);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 1.5rem;
-  text-align: left;
-  
-  
-  padding: 5%;
-}
-
-.info-card img {
-  height: 2.5rem;
-  /* width: 2rem; */
-  transition: transform 0.2s ease-in-out;
-  cursor: pointer;
-  position: relative;
-}
-
-.info-card img:hover {
-  height: 2.5rem;
-  transform: scale(1.5);
-}
-
-.info-card li {
-  --scale: 0;
-  position: relative;
-}
-
-/* .info-card li::before,  */
-.info-card li::after {
-  position: absolute;
-  bottom: -1rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%) scale(var(--scale));
-  transition: 0.2s transform ease-in-out;
-  transform-origin: top center;
-  content: attr(data-name);
-  padding: 0.5rem;
-  width: max-content;
-  max-width: 100vw;
-  background-color: white;
-  color: black;
-  border-radius: 7px;
-}
-
-.info-card li:hover {
-  --scale: 1;
+button.info-nav-bar:hover {
+  color: coral;
 }
 
 h1 {
@@ -158,6 +76,10 @@ h1 {
 h2 {
   font-size: 2rem;
   font-weight: bold;
+}
+
+svg {
+  height: 3rem;
 }
 
 .hidden {
