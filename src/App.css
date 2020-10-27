@@ -135,21 +135,24 @@ a.contact-entry {
   color: white;
   /* background-color: blue; */
   text-decoration: none;
+  transition: all 0.3s linear;
 }
 
 a.contact-entry:hover {
+
   color: var(--hover-color);
 }
 
-.thumbnail {
-  background-color: blue;
+.thumbnail { 
+  background: rgb(241,202,255); /* fall back */
+  background: linear-gradient(180deg, rgba(241,202,255,1) 0%, rgba(123,228,255,1) 100%); 
   position: relative;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 .thumbnail img {
   border-radius: inherit;
-  object-fit: cover;
+  object-fit: contain;
   height: 100%;
   width: 100%;
 }
@@ -160,13 +163,22 @@ a.contact-entry:hover {
   width: 100%;
   height: 6rem;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 0.5rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
+}
+
+.thumbnail-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+button.thumbnail {
+  text-align: left;
 }
 
 .project {
