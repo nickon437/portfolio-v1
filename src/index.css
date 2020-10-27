@@ -39,16 +39,24 @@ button {
   border: none;
   font: inherit;
   color: inherit;
+  padding: 0;
+
+  transition: all 0.3s linear;
+}
+
+button:hover {
+  filter: brightness(80%);
 }
 
 button.link {
-  padding: 0;
+  /* padding: 0; */
   text-decoration: underline;
   font-style: italic;
 }
 
 button.link:hover{
   color: var(--hover-color);
+  filter: brightness(100%);
 }
 
 ol, ul {
