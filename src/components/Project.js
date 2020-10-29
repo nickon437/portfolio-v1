@@ -10,11 +10,11 @@ const Project = () => {
             imgSrc: Rome,
             title: 'Rome',
             snippet: 'A simple and realistic IDE platform that teaches young children the fundamentals of computer science',
-            description: "This is a collaborative capstone project between RMIT University and L'enfant Corporation that our team worked on in our final year of Master Degree."
+            description: "This is a collaborative capstone project between RMIT University, L'enfant Corporation and Montessori Education that our team worked on in our final year of Master Degree."
             + "The aim of project is creating a simple yet realistic IDE platform to provide children from 6 to 9 years old a basic understanding of computer science.",
             keyFeatures: [
                 'executable programming logic',
-                'console for command line',
+                'command line interface',
                 'memory section illustrating how data is distributed',
                 'debug mode',
             ],
@@ -28,7 +28,7 @@ const Project = () => {
                 Icons.jest,
                 Icons.appEngine,
             ],
-            site: '',
+            site: 'https://rome.juliabrownschools.com/',
             source: '',
         },
         { 
@@ -39,7 +39,6 @@ const Project = () => {
             + 'The goal of this game is to terminate the offspring (Baby piece) of the enemy’s team and whoever can achieve it first will be the winner of the game. '
             + 'The objective a project is creating an application with a large emphasis on design patterns. A number of patterns that we use in this project includes '
             + 'Abstract Factory Pattern, Prototype Pattern, Command Pattern, Observer Pattern, Proxy Pattern.',
-            // keyFeatures: [],
             demo: [],
             techStack: [
                 Icons.java,

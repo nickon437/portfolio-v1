@@ -60,20 +60,6 @@ button.link:hover{
   filter: brightness(100%);
 }
 
-ol, ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-li {
-
-}
-
 button.info-nav-bar:hover {
   color: coral;
 }
@@ -94,9 +80,19 @@ svg {
   height: 3rem;
 }
 
-.no-scroll {
-  /* flex-wrap: nowrap; */
-  /* overflow: hidden; */
+.std-btn {
+  border: 2px solid var(--hover-color);
+  padding: 0.5rem 1rem;
+  width: 10rem;
+  color: white;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.std-btn:hover {
+  background-color: var(--hover-color);
+  color: var(--bg);
+  filter: none;
 }
 
 .hidden {
