@@ -2,9 +2,10 @@ import React, { useContext, useRef } from 'react'
 import { UiContext } from '../context/UiContext'
 import About from './About';
 import Contact from './Contact';
+import ProjectDetail from './ProjectDetail';
 import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
-const InfoPane = () => {
+const InfoPane = ({ section, }) => {
     const [ui, setUi] = useContext(UiContext);
     const infoPaneRef = useRef(null);
     const content = useRef(null);
@@ -17,12 +18,15 @@ const InfoPane = () => {
         enableBodyScroll(infoPaneRef.current);
     }
 
-    if (ui.ctxInfoPane === 'about') {
-        content.current = <About />;
+    if (ui.ctxInfoPane !== '') {
         disableBodyScroll(infoPaneRef.current);
-    } else if (ui.ctxInfoPane === 'contact') {
-        content.current = <Contact />
-        disableBodyScroll(infoPaneRef.current);
+        if (ui.ctxInfoPane === 'about') {
+            content.current = <About />;
+        } else if (ui.ctxInfoPane === 'contact') {
+            content.current = <Contact />;
+        } else if (ui.ctxInfoPane === 'project') {
+            content.current = <ProjectDetail />;
+        }
     }
 
     return (
