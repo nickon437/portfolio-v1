@@ -1,3 +1,17 @@
+/** GENERAL **/
+
+ul.tech-stack {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  
+  padding-bottom: 3rem;
+}
+
 /** INTRO **/
 
 #intro {
@@ -76,21 +90,21 @@ img[name="Yay"] {
   height: 100%;
 }
 
-.info-pane-content img {
+.tech-stack img {
   height: 2.5rem;
   transition: transform 0.2s ease-in-out;
 }
 
-.info-pane-content img:hover {
+.tech-stack img:hover {
   transform: scale(1.5);
 }
 
-.info-pane-content li {
+.tech-stack li {
   --scale: 0;
   position: relative;
 }
 
-.info-pane-content li::after {
+.tech-stack li::after {
   position: absolute;
   bottom: -1rem;
   left: 50%;
@@ -107,7 +121,7 @@ img[name="Yay"] {
   z-index: 1;
 }
 
-.info-pane-content li:hover {
+.tech-stack li:hover {
   --scale: 1;
 }
 

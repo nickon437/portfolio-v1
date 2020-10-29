@@ -26,7 +26,7 @@ const About = () => {
             <h1>About</h1>
             <div>A software engineer who loves to collab and build intuitive, maintainable and scalable applications. I have experienced in working in Agiled environments with an emphasis on utilizing best practices to create software that meets requirements and schedule.</div>
             <h2>Technologies I work with:</h2>
-            <ul>{toolList}</ul>
+            <ul className="tech-stack">{toolList}</ul>
         </div>
     )
 }
