@@ -44,7 +44,7 @@ const Project = () => {
                 Icons.java,
             ],
             site: '',
-            source: '',
+            source: 'https://github.com/nickon437/SkyvsSea/',
         },
 
     ]

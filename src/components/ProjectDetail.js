@@ -37,13 +37,24 @@ const ProjectDetail = () => {
     let site = null;
     if (project.site && project.site.length > 0) {
         site = (
-            <a href="https://rome.juliabrownschools.com/">
+            <a href={project.site} target="_blank" rel='noreferrer'>
                 <button type="button" className="std-btn">
                     Visit site
                 </button>
             </a>
         )
-    }   
+    }
+
+    let source = null;
+    if (project.source && project.source.length > 0) {
+        source = (
+            <a href={project.source} target="_blank" rel='noreferrer'>
+                <button type="button" className="std-btn">
+                    Visit source
+                </button>
+            </a>
+        )
+    }
 
     return (
         <div className="info-pane-content">
@@ -54,7 +65,7 @@ const ProjectDetail = () => {
             <h2>Technologies:</h2>
             <ul className="tech-stack">{techStack}</ul>
             {demo}
-            {site}
+            <div className="hflex">{site}{source}</div>
         </div>
     )
 }
