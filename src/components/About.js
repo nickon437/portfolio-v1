@@ -14,7 +14,8 @@ const About = () => {
         Icons.seleniumWebDriver, 
         Icons.mySQL, 
         Icons.appEngine, 
-        Icons.git, 
+        Icons.git,
+        Icons.unity,
     ];
 
     const toolList = toolData.map((tool) => (

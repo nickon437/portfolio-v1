@@ -148,7 +148,7 @@ img[name="Yay"] {
 }
 
 a.contact-entry {
-  color: white;
+  color: var(--text-color);
   /* background-color: blue; */
   text-decoration: none;
   transition: all 0.3s linear;
