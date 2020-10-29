@@ -8,8 +8,7 @@ const Main = () => {
     const [ui, setUi] = useContext(UiContext);
     return (
         
-      <div className={`App ${ui.ctxInfoPane === '' ? '' : 'no-scroll'}`}>
-    {/* //   <div className="App"> */}
+      <div className="App">
         <Intro />
         <InfoPane />
         <Project />
