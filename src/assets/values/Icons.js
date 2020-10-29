@@ -14,6 +14,7 @@ import junitLogo from '../img/junitLogo.png';
 import github from '../img/github.png';
 import email from '../img/email.png';
 import linkedin from '../img/linkedin.png';
+import unity from '../img/unity.png';
 
 class Icons {
     static yay = { name: 'Yay', logo: yay, alt: 'Yay' };
@@ -32,6 +33,7 @@ class Icons {
     static github = { name: 'GitHub', logo: github, alt: "GitHub"}
     static email = { name: 'Email', logo: email, alt: "Email"}
     static linkedin = { name: 'Linkedin', logo: linkedin, alt: "Linkedin"}
+    static unity = { name: 'Unity', logo: unity, alt: "Unity"}
 }
 
 export default Icons;

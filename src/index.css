@@ -29,9 +29,14 @@ code {
 
 #root {
   --bg: #1E272E;
+  /* --bg: rgb(203, 253, 219); */
+  /* --bg: white; */
   --hover-color: coral;
+  /* --hover-color:   rgb(146, 46, 121); */
+  --text-color: white;
   background-color: var(--bg);
-  color: white;
+  color: var(--text-color);
+  /* color: #333; */
 }
 
 button {
