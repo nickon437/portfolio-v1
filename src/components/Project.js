@@ -46,6 +46,22 @@ const Project = () => {
             site: '',
             source: 'https://github.com/nickon437/SkyvsSea/',
         },
+        { 
+            imgSrc: '',
+            title: 'Bees vs. Wasps',
+            snippet: 'A game in which player will take the role of a swarm of defender bee to protect the hive and the worker bees from the enemies , and to collect the nectar for the survival of the hive',
+            description: 'This is a project for Games and Artificial Intelligent. '
+            + 'In this game, player will take the role of a swarm of defender bees to protect the nest and other workers from the wasps. '
+            + 'Our team also implement AI with reinforcement learning to the workers so that it can navigate its ways to the flowers while avoiding the enemies at the same time.',
+            demo: [],
+            techStack: [
+                Icons.unity,
+                Icons.csharp,
+                Icons.anaconda,
+            ],
+            site: '',
+            source: '',
+        },
 
     ]
 
