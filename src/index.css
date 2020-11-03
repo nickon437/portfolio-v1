@@ -89,7 +89,8 @@ svg {
 .std-btn {
   border: 2px solid var(--hover-color);
   padding: 0.5rem 1rem;
-  width: 12rem;
+  min-width: 12rem;
+  width: fit-content;
   color: white;
   border-radius: 5px;
   font-weight: 700;
