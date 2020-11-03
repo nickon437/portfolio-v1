@@ -25,7 +25,9 @@ const About = () => {
     return (
         <div id="about" className="info-pane-content">
             <h1>About</h1>
-            <div>A software engineer who loves to collab and build intuitive, maintainable and scalable applications. I have experienced in working in Agiled environments with an emphasis on utilizing best practices to create software that meets requirements and schedule.</div>
+            <div>A software engineer who loves to collab and build intuitive, maintainable and scalable applications. I have experienced in working in Agile environments with an emphasis on utilizing best practices to create software that meets requirements and schedule.</div>
+            <button className="std-btn">Download resume</button>
+            
             <h2>Technologies I work with:</h2>
             <ul className="tech-stack">{toolList}</ul>
         </div>

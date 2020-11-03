@@ -24,12 +24,14 @@ const ProjectDetail = () => {
 
     let demo = null;
     if (project.demo && project.demo.length > 0) {
-        keyFeatures = (
+        demo = (
             <div>
                 <div>Demo:</div>
-                <ol>
-                    {project.demo.map((illustration) => (<li>{illustration}</li>))}
-                </ol>
+                <ul className="demo-list">
+                    {project.demo.map((illustration) => (
+                        <li data-name={illustration.name} className="demo-item"><img src={illustration.gif} alt={illustration.alt}/></li>
+                    ))}
+                </ul>
             </div>
         );
     }

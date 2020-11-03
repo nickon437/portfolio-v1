@@ -2,6 +2,7 @@ import React from 'react'
 import Thumbnail from './Thumbnail';
 import Rome from '../assets/img/Rome.png';
 import Icons from '../assets/values/Icons';
+import Gifs from '../assets/values/Gifs';
 
 const Project = () => {
 
@@ -18,7 +19,12 @@ const Project = () => {
                 'memory section illustrating how data is distributed',
                 'debug mode',
             ],
-            demo: [],
+            demo: [
+                Gifs.datatypes,
+                Gifs.debug,
+                Gifs.importIO,
+                Gifs.sidebar,
+            ],
             techStack: [
                 Icons.javascript,
                 Icons.reactJS,
@@ -53,7 +59,10 @@ const Project = () => {
             description: 'This is a project for Games and Artificial Intelligent. '
             + 'In this game, player will take the role of a swarm of defender bees to protect the nest and other workers from the wasps. '
             + 'Our team also implement AI with reinforcement learning to the workers so that it can navigate its ways to the flowers while avoiding the enemies at the same time.',
-            demo: [],
+            demo: [
+                Gifs.wasp,
+                Gifs.flocking,
+            ],
             techStack: [
                 Icons.unity,
                 Icons.csharp,

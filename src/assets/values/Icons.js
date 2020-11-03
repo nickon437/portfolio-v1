@@ -20,7 +20,7 @@ import anaconda from '../img/anaconda.png';
 
 class Icons {
     static yay = { name: 'Yay', logo: yay, alt: 'Yay' };
-    static jest = { name: 'Jest', logo: jestLogo, alt: "Jest framework's" };
+    static jest = { name: 'Jest', logo: jestLogo, alt: "Jest testing framework" };
     static java = { name: 'Java', logo: javaLogo, alt: "Java"};
     static nodeJS = { name: 'NodeJS', logo: nodeJSLogo, alt: "NodeJS"};
     static reactJS = { name: 'ReactJS', logo: reactLogo, alt: "ReactJS"};
