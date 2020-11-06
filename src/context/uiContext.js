@@ -5,6 +5,17 @@ export const UiContext = React.createContext();
 export const UiProvider = (props) => {
   const [ui, setUi] = useState({
     ctxInfoPane: '',
+    ctxProjectDetails: {
+      imgSrc: '', 
+      title: '', 
+      snippet: '',
+      description: '',
+      keyFeatures: [],
+      demo: [],
+      techStack: [],
+      site: '',
+      source: '',
+    },
   });
 
   return (

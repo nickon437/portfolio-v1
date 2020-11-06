@@ -1,5 +1,6 @@
 import React from 'react';
 import Icons from '../assets/values/Icons';
+import '../assets/docs/Resume.pdf';
 
 const About = () => {
     const toolData = [
@@ -14,7 +15,8 @@ const About = () => {
         Icons.seleniumWebDriver, 
         Icons.mySQL, 
         Icons.appEngine, 
-        Icons.git, 
+        Icons.git,
+        Icons.unity,
     ];
 
     const toolList = toolData.map((tool) => (
@@ -24,9 +26,10 @@ const About = () => {
     return (
         <div id="about" className="info-pane-content">
             <h1>About</h1>
-            <div>A software engineer who loves to collab and build intuitive, maintainable and scalable applications. I have experienced in working in Agiled environments with an emphasis on utilizing best practices to create software that meets requirements and schedule.</div>
+            <div>A software engineer who loves to collab and build intuitive, maintainable and scalable applications. I have experienced in working in Agile environments with an emphasis on utilizing best practices to create software that meets requirements and schedule.</div>
+            <a href="../assets/docs/Resume.pdf" className="std-btn" download>Download resume</a>
             <h2>Technologies I work with:</h2>
-            <ul>{toolList}</ul>
+            <ul className="tech-stack">{toolList}</ul>
         </div>
     )
 }
