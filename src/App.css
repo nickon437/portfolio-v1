@@ -132,7 +132,7 @@ img[name="Yay"] {
 }
 
 .info-nav-bar {
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 5px;
   z-index: 1;
@@ -253,8 +253,12 @@ button.thumbnail {
   justify-items: center;
 }
 
+.demo-list img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
-  .demo-list {
+  .demo-list, .project-list {
     grid-template-columns: repeat(1, 1fr);
   }
 }
