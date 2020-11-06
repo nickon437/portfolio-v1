@@ -15,7 +15,7 @@ export default function Intro() {
     return (
         <div id="intro">
             <div className="heading">Hi, I am Nick <img src={Icons.yay.logo} alt={Icons.yay.alt} name={Icons.yay.name}/></div>
-            <div className="content">A front-end developer who wants to bring the optimal experience with intuitive design, and scalable application.</div>
+            <div className="content">A front-end developer who wants to create the optimal experience with intuitive design, and scalable applications.</div>
             <div className="content">Read more <button type="button" className="link" name="about" onClick={handleOpenPane}>about me</button> or <button type="button" className="link" name="contact" onClick={handleOpenPane}>contact me</button>.</div>
         </div>
     )
